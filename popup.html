@@ -1,0 +1,53 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tab Saver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            min-width: 200px;
+        }
+        input[type="password"] {
+            width: calc(100% - 20px);;
+            padding: 8px;
+            margin-top: 10px;
+        }
+        #restoreButton {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #008ce3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #restoreButton:hover {
+            background-color: #0268a8;
+        }
+        #saveButton {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #saveButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Tab Saver</h2>
+    <input type="password" id="password" placeholder="Enter Password">
+    <button id="saveButton">Save Tabs</button>
+    <button id="restoreButton">Restore Tabs</button>
+    <div id="message"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
